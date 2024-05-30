@@ -232,6 +232,7 @@ def main(username):
     log_out_image = ImageTk.PhotoImage(Image.open("Log_Out_Logo.png").resize((39, 32)))
     log_out_button = gui.button_design(frame, 2, 1001, 259, 79, "#5EB0DE", "white", "  Log Out",("Century Gothic", 12, 'bold'))
     log_out_button.config(image=log_out_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5EB0DE",  command=log_out)
+    #changed update and delete button
     update_button = gui.button_design(frame, 1486, 857, 118, 40, "#blue", "white", "UPDATE", ("Century Gothic", 13))
     update_button.config(command=updateData)
     delete_button = gui.button_design(frame, 1621, 857, 118, 40, "#dark blue", "white", "DELETE", ("Century Gothic", 13))
