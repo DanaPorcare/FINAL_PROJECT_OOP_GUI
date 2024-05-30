@@ -251,7 +251,7 @@ def main(username):
     log_out_image = ImageTk.PhotoImage(Image.open("Log_Out_Logo.png").resize((39, 32)))
     log_out_button = gui.button_design(frame, 2, 1001, 259, 79, "#5EB0DE", "white", "  Log Out", ("Century Gothic", 12, 'bold'))
     log_out_button.config(image=log_out_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#5EB0DE", command=log_out)
-    Update_button = gui.button_design(frame, 866, 426, 94, 36, "#5AACDB", "white", "Update", ("Century Gothic", 13))
+    Update_button = gui.button_design(frame, 866, 426, 94, 36, "black", "white", "Update", ("Century Gothic", 13))
     Update_button.config(command=updateData)
 
     window.state('zoomed')  # Functionality to keep the page on auto-full screen
